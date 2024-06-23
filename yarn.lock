@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@adraffy/ens-normalize@1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@adraffy/ens-normalize/-/ens-normalize-1.10.0.tgz#d2a39395c587e092d77cbbc80acf956a54f38bf7"
+  integrity sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==
+
 "@adraffy/ens-normalize@1.9.2":
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/@adraffy/ens-normalize/-/ens-normalize-1.9.2.tgz#60111a5d9db45b2e5cbb6231b0bb8d97e8659316"
@@ -4374,6 +4379,13 @@
   dependencies:
     eslint-scope "5.1.1"
 
+"@noble/curves@1.2.0", "@noble/curves@~1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.2.0.tgz#92d7e12e4e49b23105a2555c6984d41733d65c35"
+  integrity sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==
+  dependencies:
+    "@noble/hashes" "1.3.2"
+
 "@noble/curves@1.3.0", "@noble/curves@~1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.3.0.tgz#01be46da4fd195822dab821e72f71bf4aeec635e"
@@ -4393,7 +4405,12 @@
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.1.2.tgz#e9e035b9b166ca0af657a7848eb2718f0f22f183"
   integrity sha512-KYRCASVTv6aeUi1tsF8/vpyR7zpfs3FUzy2Jqm+MU+LmUKhQ0y2FpfwqkCcxSg2ua4GALJd8k2R76WxwZGbQpA==
 
-"@noble/hashes@1.3.3", "@noble/hashes@~1.3.2":
+"@noble/hashes@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.2.tgz#6f26dbc8fbc7205873ce3cee2f690eba0d421b39"
+  integrity sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==
+
+"@noble/hashes@1.3.3", "@noble/hashes@~1.3.0", "@noble/hashes@~1.3.2":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.3.tgz#39908da56a4adc270147bb07968bf3b16cfe1699"
   integrity sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==
@@ -5204,6 +5221,11 @@
   resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.1.tgz#ebb651ee52ff84f420097055f4bf46cfba403938"
   integrity sha512-ZxOhsSyxYwLJj3pLZCefNitxsj093tb2vq90mp2txoYeBqbcjDjqFhyM8eUjq/uFm6zJ+mUuqxlS2FkuSY1MTA==
 
+"@scure/base@~1.1.2":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.7.tgz#fe973311a5c6267846aa131bc72e96c5d40d2b30"
+  integrity sha512-PPNYBslrLNNUQ/Yad37MHYsNQtK67EhWb6WtSvNLLPo7SdVZgkUjD6Dg+5On7zNwmskf8OX7I7Nx5oN+MIWE0g==
+
 "@scure/bip32@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@scure/bip32/-/bip32-1.1.0.tgz#dea45875e7fbc720c2b4560325f1cf5d2246d95b"
@@ -5212,6 +5234,15 @@
     "@noble/hashes" "~1.1.1"
     "@noble/secp256k1" "~1.6.0"
     "@scure/base" "~1.1.0"
+
+"@scure/bip32@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@scure/bip32/-/bip32-1.3.2.tgz#90e78c027d5e30f0b22c1f8d50ff12f3fb7559f8"
+  integrity sha512-N1ZhksgwD3OBlwTv3R6KFEcPojl/W4ElJOeCZdi+vuI5QmTFwLq3OFf2zd2ROpKvxFdgZ6hUpb0dx9bVNEwYCA==
+  dependencies:
+    "@noble/curves" "~1.2.0"
+    "@noble/hashes" "~1.3.2"
+    "@scure/base" "~1.1.2"
 
 "@scure/bip32@1.3.3":
   version "1.3.3"
@@ -5228,6 +5259,14 @@
   integrity sha512-pwrPOS16VeTKg98dYXQyIjJEcWfz7/1YJIwxUEPFfQPtc86Ym/1sVgQ2RLoD43AazMk2l/unK4ITySSpW2+82w==
   dependencies:
     "@noble/hashes" "~1.1.1"
+    "@scure/base" "~1.1.0"
+
+"@scure/bip39@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@scure/bip39/-/bip39-1.2.1.tgz#5cee8978656b272a917b7871c981e0541ad6ac2a"
+  integrity sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==
+  dependencies:
+    "@noble/hashes" "~1.3.0"
     "@scure/base" "~1.1.0"
 
 "@scure/bip39@1.2.2":
@@ -7437,14 +7476,13 @@
     ethers "5.5.4"
     joi "17.9.1"
 
-"@web3-onboard/common@^2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@web3-onboard/common/-/common-2.3.4.tgz#1ce41e090c19e8ac802c45737de3dda3dabea751"
-  integrity sha512-LQM7ZA1LoJ4GirsVEWHkv9KNJcrIT+AplR957BP5O8tll+p/A1GCju89C7jAMnb3+9LShUCwHcbE4o8l8gVb9A==
+"@web3-onboard/common@^2.4.1":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@web3-onboard/common/-/common-2.4.2.tgz#ffa7b1a7cb6410d9cc4d7b38d50b97a857b334cb"
+  integrity sha512-3+zkBru5W2jBYFBPPQsnqZ7tuN1GUyM5PzD9/MmhvjCLNhmjFtMQ0MkLzG4Yshodb4UW/DmZpjUVrpjdhEhj/Q==
   dependencies:
-    bignumber.js "^9.1.0"
-    ethers "5.5.4"
     joi "17.9.1"
+    viem "2.12.0"
 
 "@web3-onboard/core@2.21.2":
   version "2.21.2"
@@ -7465,13 +7503,14 @@
     svelte "^3.49.0"
     svelte-i18n "^3.3.13"
 
-"@web3-onboard/hw-common@^2.3.0":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@web3-onboard/hw-common/-/hw-common-2.3.1.tgz#1a968a0b40e64bb6b82593810c15b1fa7f620306"
-  integrity sha512-Dbztkmr+0iN3BJmwu7f3nvk7atbJEm9AmySlyyIYTqn+kuPWk88j8s1PAyHHOej2lLrtswyj1c3ER65O5S1M2g==
+"@web3-onboard/hw-common@^2.3.2":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@web3-onboard/hw-common/-/hw-common-2.3.3.tgz#c8327b3eb6808e251809e6a7abeae84a542b0b85"
+  integrity sha512-AkJixEMSDsLjNeeruXvR2WAPa9Ji3lOR0+gKrVoW9Uwf6b3YmWh8dBAPd2XRVUVOc/AUNSwcNJVQ3Xo9rZkuhg==
   dependencies:
     "@ethereumjs/common" "2.6.2"
-    "@web3-onboard/common" "^2.3.4"
+    "@web3-onboard/common" "^2.4.1"
+    bignumber.js "^9.1.0"
     ethers "5.5.4"
     joi "17.9.1"
     rxjs "^7.5.2"
@@ -7485,16 +7524,16 @@
     joi "17.9.1"
     lodash.uniqby "^4.7.0"
 
-"@web3-onboard/trezor@2.4.3":
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/@web3-onboard/trezor/-/trezor-2.4.3.tgz#a509ce37eff5ee4432a85c8a62217b1b2a757f73"
-  integrity sha512-Um/g766/jzbSd9tBCAWqD7vJOPX+V6bxqGP2SX8Hh8G3cXtMklTUkmbrY2spp8QHPj2HcQWHVIxfjsFVFcqmUg==
+"@web3-onboard/trezor@2.4.6":
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/@web3-onboard/trezor/-/trezor-2.4.6.tgz#ca7ce429a19e70a87fee3a3e96e94440ca37bda2"
+  integrity sha512-cP8krxZcmD6n5mh/xp8h4+6CVLqZmLL2mJrtx64n7bEsWpS3mauhe6ipQHRpMRfhS3VyoELQy7V0r9spYAZJTg==
   dependencies:
     "@ethereumjs/tx" "^3.4.0"
     "@ethersproject/providers" "^5.5.0"
     "@trezor/connect-web" "^9.0.11"
-    "@web3-onboard/common" "^2.3.3"
-    "@web3-onboard/hw-common" "^2.3.0"
+    "@web3-onboard/common" "^2.4.1"
+    "@web3-onboard/hw-common" "^2.3.2"
     buffer "^6.0.3"
     eth-crypto "^2.1.0"
     ethereumjs-util "^7.1.3"
@@ -7692,6 +7731,11 @@ abbrev@1.0.x:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
   integrity sha512-LEyx4aLEC3x6T0UguF6YILf+ntvmOaWsVfENmIW0E9H09vKlLDGelMjjSm0jkDHALj8A8quZ/HapKNigzwge+Q==
+
+abitype@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/abitype/-/abitype-1.0.0.tgz#237176dace81d90d018bebf3a45cb42f2a2d9e97"
+  integrity sha512-NMeMah//6bJ56H5XRj8QCV4AwuW6hB6zqz2LnhhLdcWVQOsXki6/Pn3APeqxCma62nXIcmZWdu1DlHWS74umVQ==
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -14062,12 +14106,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0, follow-redirects@^1.12.1:
-  version "1.15.6"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
-  integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
-
-follow-redirects@^1.15.6:
+follow-redirects@^1.0.0, follow-redirects@^1.12.1, follow-redirects@^1.15.6:
   version "1.15.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
   integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
@@ -16444,6 +16483,11 @@ isomorphic-ws@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/isomorphic-ws/-/isomorphic-ws-4.0.1.tgz#55fd4cd6c5e6491e76dc125938dd863f5cd4f2dc"
   integrity sha512-BhBvN2MBpWTaSHdWRb/bwdZJ1WaehQ2L1KngkCkfLUGF0mAWAT1sQUQacEmQ0jXkFw/czDXPNQSL5u2/Krsz1w==
+
+isows@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/isows/-/isows-1.0.4.tgz#810cd0d90cc4995c26395d2aa4cfa4037ebdf061"
+  integrity sha512-hEzjY+x9u9hPmBom9IIAqdJCwNLax+xrPb51vEPpERoFlIxgmZcHzsT5jKG06nvInKOBGvReAVz80Umed5CczQ==
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -24822,6 +24866,20 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+viem@2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.12.0.tgz#699ba326a1ce0df81042dc8b6f22fa751f9cefce"
+  integrity sha512-XBvORspE4x2/gfy7idH6IVFwkJiXirygFCU3lxUH6fttsj8zufLtgiokfvZF/LAZUEDvdxSgL08whSYgffM2fw==
+  dependencies:
+    "@adraffy/ens-normalize" "1.10.0"
+    "@noble/curves" "1.2.0"
+    "@noble/hashes" "1.3.2"
+    "@scure/bip32" "1.3.2"
+    "@scure/bip39" "1.2.1"
+    abitype "1.0.0"
+    isows "1.0.4"
+    ws "8.13.0"
+
 vm-browserify@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
@@ -26158,6 +26216,11 @@ ws@7.4.6:
   version "7.4.6"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.6.tgz#5654ca8ecdeee47c33a9a4bf6d28e2be2980377c"
   integrity sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==
+
+ws@8.13.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
+  integrity sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==
 
 ws@^3.0.0:
   version "3.3.3"
